@@ -1,0 +1,239 @@
+[
+    {
+        "id": "doc001",
+        "name": "Product Description Document",
+        "parent": null,
+        "type": "Document"
+    },
+    {
+        "id": "doc002",
+        "name": "Product Description Document v2",
+        "parent": null,
+        "type": "Document"
+    },
+    {
+        "id": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "name": "relations",
+        "parent": "doc001",
+        "type": "Package"
+    },
+    {
+        "id": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "name": "1.0 Introduction",
+        "parent": "doc001",
+        "type": "View"
+    },
+    {
+        "id": "d2b9df55-c26f-47a4-bcfd-558bb22e168e",
+        "name": "1.1 Purpose",
+        "parent": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "type": "View"
+    },
+    {
+        "id": "63f70014-530d-4f01-b766-d37eb50c0993",
+        "name": "p1",
+        "documentation": "This is the introduction.",
+        "parent": "d2b9df55-c26f-47a4-bcfd-558bb22e168e",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "c98ebed4-a16a-4264-b505-e8e3102a63ac",
+        "name": "contains :: (1.1 Purpose:View) --> (p1:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "d2b9df55-c26f-47a4-bcfd-558bb22e168e",
+        "target": "63f70014-530d-4f01-b766-d37eb50c0993"
+    },
+    {
+        "id": "78653e3e-4201-444c-83cf-142ededb2078",
+        "name": "contains :: (1.0 Introduction:View) --> (1.1 Purpose:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "target": "d2b9df55-c26f-47a4-bcfd-558bb22e168e"
+    },
+    {
+        "id": "d9ef7c08-dca9-49ac-ad37-9f7a80844e7e",
+        "name": "1.2 Scope",
+        "parent": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "type": "View"
+    },
+    {
+        "id": "48b74f0f-0c1f-4cab-ae9c-b6399048decb",
+        "name": "p1",
+        "documentation": "This is the introduction.",
+        "parent": "d9ef7c08-dca9-49ac-ad37-9f7a80844e7e",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "4492699d-7fb9-4cc0-937e-929453579bb7",
+        "name": "contains :: (1.2 Scope:View) --> (p1:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "d9ef7c08-dca9-49ac-ad37-9f7a80844e7e",
+        "target": "48b74f0f-0c1f-4cab-ae9c-b6399048decb"
+    },
+    {
+        "id": "fc76d19d-a32d-4bec-9d8c-3bf99a52d1f5",
+        "name": "contains :: (1.0 Introduction:View) --> (1.2 Scope:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "target": "d9ef7c08-dca9-49ac-ad37-9f7a80844e7e"
+    },
+    {
+        "id": "5f2aa60c-23d0-4f20-b3b9-6a8d7660e492",
+        "name": "p1",
+        "documentation": "This is the introduction.",
+        "parent": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "99c06884-9865-4800-af23-dca367ee7595",
+        "name": "contains :: (1.0 Introduction:View) --> (p1:ViewPoint)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "573b8c64-0119-4e0a-9d79-16d72a5da5a4",
+        "target": "5f2aa60c-23d0-4f20-b3b9-6a8d7660e492"
+    },
+    {
+        "id": "5c5f5e47-7da3-48c2-b2ef-fe3816731c9a",
+        "name": "contains :: (Product Description Document:Document) --> (Product Description Document:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "doc001",
+        "target": "573b8c64-0119-4e0a-9d79-16d72a5da5a4"
+    },
+    {
+        "id": "a8ab5c40-d19b-4b74-8a29-af5309973fa4",
+        "name": "2.0 Product Description",
+        "parent": "doc001",
+        "type": "View"
+    },
+    {
+        "id": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "name": "2.1 Technical Description",
+        "parent": "a8ab5c40-d19b-4b74-8a29-af5309973fa4",
+        "type": "View"
+    },
+    {
+        "id": "c66338df-5500-419f-97f8-1d2e410f26f1",
+        "name": "p1",
+        "documentation": "For a number of years now, work has been proceeding in order to  bring perfection to the crudely conceived idea of a transmission  that would not only supply inverse reactive current for use in  unilateral phase detractors, but would also be capable of  automatically synchronizing cardinal grammeters. Such an instrument  is the turbo encabulator.",
+        "parent": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "f92fff53-1306-42b5-9c32-bcdc9ed7176e",
+        "name": "contains :: (2.1 Technical Description:View) --> (p1:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "target": "c66338df-5500-419f-97f8-1d2e410f26f1"
+    },
+    {
+        "id": "8f3ced96-77d8-41c7-8b59-60a51694c35d",
+        "name": "p2",
+        "documentation": "Now basically the only new principle involved is that instead of  power being generated by the relative motion of conductors and fluxes, it is produced by the modial interaction of magneto-reluctance and  capacitive diractance.",
+        "parent": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "90b13a55-233d-4104-ba32-aaa428f9d54a",
+        "name": "contains :: (2.1 Technical Description:View) --> (p2:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "target": "8f3ced96-77d8-41c7-8b59-60a51694c35d"
+    },
+    {
+        "id": "e7839540-2750-4de8-8014-5d4cf8b8d5b6",
+        "name": "p3",
+        "documentation": "The original machine had a base plate of pre-famulated amulite  surmounted by a malleable logarithmic casing in such a way that the  two spurving bearings were in a direct line with the panametric fan.  The latter consisted simply of six hydrocoptic marzlevanes, so fitted to the ambifacient lunar waneshaft that side fumbling was effectively prevented.",
+        "parent": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "6f533878-6c1c-4863-905a-8415add9a473",
+        "name": "contains :: (2.1 Technical Description:View) --> (p3:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "target": "e7839540-2750-4de8-8014-5d4cf8b8d5b6"
+    },
+    {
+        "id": "230ca288-64a1-4e59-a4c2-45db696d6f84",
+        "name": "p4",
+        "documentation": "The main winding was of the normal lotus-o-delta type placed in  panendermic semi-boloid slots of the stator, every seventh conductor  being connected by a non-reversible tremie pipe to the differential girdle spring on the up end of the grammeters",
+        "parent": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "fc5990a2-c026-48fa-bc4a-2c89af5dfb7c",
+        "name": "contains :: (2.1 Technical Description:View) --> (p4:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "target": "230ca288-64a1-4e59-a4c2-45db696d6f84"
+    },
+    {
+        "id": "4b756d34-7cd3-4438-a086-7ef436bed7b6",
+        "name": "p5",
+        "documentation": "The turbo-encabulator has now reached a high level of development,  and its being successfully used in the operation of novertrunnions. Moreover, whenever a forescent skor motion is required, it may also be employed in conjunction with a drawn reciprocation dingle arm, to reduce sinusoidal repleneration.",
+        "parent": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "9ce89dc2-5770-4594-b248-fa19de39e5ac",
+        "name": "contains :: (2.1 Technical Description:View) --> (p5:ViewPoint)",
+        "parent": null,
+        "type": "Contains",
+        "source": "12d60910-02cc-4add-9bc9-fe4f36c15b9b",
+        "target": "4b756d34-7cd3-4438-a086-7ef436bed7b6"
+    },
+    {
+        "id": "4aaee745-4e0f-4b21-bb98-e3b328a9fce8",
+        "name": "contains :: (2.0 Product Description:View) --> (2.1 Technical Description:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "a8ab5c40-d19b-4b74-8a29-af5309973fa4",
+        "target": "12d60910-02cc-4add-9bc9-fe4f36c15b9b"
+    },
+    {
+        "id": "5f110525-6f29-4890-b339-33848364d0b4",
+        "name": "contains :: (Product Description Document:Document) --> (Product Description Document:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "doc001",
+        "target": "a8ab5c40-d19b-4b74-8a29-af5309973fa4"
+    },
+    {
+        "id": "49c5d39e-a38b-4b49-99e2-57ad4652be23",
+        "name": "3.0 Conclusion",
+        "parent": "doc001",
+        "type": "View"
+    },
+    {
+        "id": "256b8911-8f5e-4f96-9968-f6e827981769",
+        "name": "p1",
+        "documentation": "This is the conclusion.",
+        "parent": "49c5d39e-a38b-4b49-99e2-57ad4652be23",
+        "type": "ViewPoint"
+    },
+    {
+        "id": "5274c8f4-edf0-4402-afcf-3865fd277169",
+        "name": "contains :: (3.0 Conclusion:View) --> (p1:ViewPoint)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "49c5d39e-a38b-4b49-99e2-57ad4652be23",
+        "target": "256b8911-8f5e-4f96-9968-f6e827981769"
+    },
+    {
+        "id": "cb790715-a2fc-44a3-8cba-d0f0687538f0",
+        "name": "contains :: (Product Description Document:Document) --> (Product Description Document:View)",
+        "parent": "6c23b48d-ffc2-4bb2-81c1-c15e4d062e52",
+        "type": "Contains",
+        "source": "doc001",
+        "target": "49c5d39e-a38b-4b49-99e2-57ad4652be23"
+    }
+]
