@@ -18,7 +18,7 @@ with open('./requirements.txt') as f:
 
 setuptools.setup(
     name='trivium-cli',
-    version='0.1.0',
+    version='0.2.0',
     description='Trivium CLI',
     long_description=long_description,
     long_description_content_type="text/markdown",
