@@ -164,6 +164,33 @@ class RestElement(RestObject):
         # Raise exception if not 200
         raise Exception('TriviumApiError: {} {}'.format(r.status_code, r.text))
 
+    ##
+    # Puts elements in a model
+    ##
+    @staticmethod
+    def patch(model, data):
+        """PATCH model data"""
+        # Break up model identifier into parts
+        ids = model.split(':')
+        org = ids[0]
+        project = ids[1]
+        if len(ids) > 2:
+            branch = ids[2]
+        else:
+            branch = 'main'
+
+        opts = {
+            'method': 'PATCH',
+            'params': {'fields': 'id', 'minified': 'true'},
+            'body': data
+        }
+        url = '/orgs/{}/projects/{}/branches/{}/elements'.format(org, project, branch)
+        r = TriviumApi().make_request(url, **opts)
+        if r.status_code == 200:
+            return r.json()
+
+        # Raise exception if not 200
+        raise Exception('TriviumApiError: {} {}'.format(r.status_code, r.text))
 
     ##
     # Deletes an element
